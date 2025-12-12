@@ -1,0 +1,4 @@
+# Create bucket and upload
+aws s3 mb s3://your-frontend-bucket
+aws s3 website s3://your-frontend-bucket --index-document index.html
+aws s3 sync frontend/ s3://your-frontend-bucket --acl public-read
