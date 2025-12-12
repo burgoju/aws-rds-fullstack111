@@ -1,0 +1,15 @@
+# Install dependencies
+sudo apt update
+sudo apt install nodejs npm
+
+# Clone and setup
+git clone https://github.com/burgoju/aws-rds-backend.git
+cd aws-rds-backend
+npm install
+
+# Configure environment
+cp .env.example .env
+# Edit .env with RDS credentials
+
+# Start server
+pm2 start server.js
