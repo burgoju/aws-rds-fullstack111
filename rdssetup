@@ -1,0 +1,9 @@
+# Create RDS instance via CLI
+aws rds create-db-instance \
+    --db-instance-identifier aws-learning-db \
+    --db-instance-class db.t3.micro \
+    --engine mysql \
+    --master-username admin \
+    --master-user-password YourPassword123 \
+    --allocated-storage 20 \
+    --publicly-accessible
